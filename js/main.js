@@ -15,4 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Close menu when language selector is clicked
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (header) {
+        header.classList.remove('nav-open');
+        if (toggle) {
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
 });
