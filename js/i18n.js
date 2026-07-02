@@ -1,18 +1,24 @@
 const translations = {
   lv: {
     pageTitle: 'Itāļu kafija un uzkodas — itāļu kafejnīca Vecrīgā',
+    topbarOpen: 'Mēs tagad esam atvērti',
     navAbout: 'Par mums',
     navMenu: 'Ēdienkarste',
     navLocation: 'Kur atrast',
     navContacts: 'Kontakti',
     btnBolt: 'Pasūtīt Bolt Food',
     heroLocation: 'Vecrīga · Torņa iela 4',
-    heroTitle: 'Itāļu kafija',
-    heroSubtitle: 'un uzkodas',
+    heroHook: 'Izsalcis?!',
+    heroWelcomePre: 'Lieliski, šeit jūs sagaida',
+    heroWelcomeHighlight: 'īsta Itālija',
     heroDesc: 'Īstā itāļu kafejnīca Vecrīgas sirdī — aromātisks espreso, pica no krāsns, pasta un ukoši uzkodas. Ierodieties galdā vai pasūtiet ar piegādi.',
     btnOrder: 'Pasūtīt piegādi',
-    btnMap: 'Atrast mums kartē',
+    btnSeeMenu: 'Skatīt ēdienkarti',
     heroHours: 'Katru dienu · 11:40–20:00',
+    promoTitle: 'Pasūtiet ar piegādi Bolt Food',
+    promoDesc: 'Iecienītākā pica, pasta un desērti — tieši līdz jūsu durvīm siltā veidā.',
+    promoBtn1: 'Skatīt ēdienkarti',
+    promoBtn2: 'Pasūtīt tagad',
     aboutEyebrow: 'Par mums',
     aboutTitle: 'Itālijas kūka Vecrīgas bruģakmenī',
     aboutDesc: 'Itāļu kafija un uzkodas — neliela ģimenes kafejnīca, kur itāļu espreso gatavo tāpat kā Neapolē mācīja, un picu cepa līdz crustnīgai garozei. Šeit var nesteigīgi pasniedzt kafiju ar croissant, pusdieno ar pastas ar lašu vai paņemt picu un ukoši uzkodas līdzi.',
@@ -24,18 +30,20 @@ const translations = {
     pointDesc3: 'Mozarella, baziliks, žāvēti tomāti — katru dienu.',
     menuEyebrow: 'Izvēle',
     menuTitle: 'Mūsu ēdienkarste',
-    menuNote: 'Tālāk — mūsu piedāvājuma izlasīti pozīcijas. Pilnu ēdienkartīti, pilnīgu pozīciju sarakstu un cenas skatīt lietotnē un Bolt Food lapā.',
+    menuNote: 'Zemāk — mūsu piedāvājuma izlasītas pozīcijas ar orientējošām cenām. Pilnu ēdienkarti un precīzas cenas skatiet lietotnē un Bolt Food lapā.',
     menuCoffee: 'Kafija un esprešo bārs',
     menuPizza: 'Pica no krāsns',
     menuPasta: 'Pasta un karstie ēdieni',
     menuSnacks: 'Uzkodas',
     menuDesserts: 'Desērti',
-    signature: 'mājiens iemīļotais',
-    snack1: 'Brusketa ar tomātiem un baziliku',
-    snack2: 'Kaprēze (mozarella, tomāts, baziliks)',
+    coffeeMocha: 'Mocha / karsts šokolāds',
+    signature: 'mājas favorīts',
+    snack1: 'Brusketa pomodoro',
+    snack2: 'Kaprēze salāti',
     snack3: 'Panini čiabatta',
     snack4: 'Olīvu un siera šķīvis',
-    favorite: 'viesis mēdz visvairāk',
+    dessertCannoli: 'Kanolī ar rikotu',
+    favorite: 'viesu iecienītākais',
     btnFullMenu: 'Skatīt pilnu ēdienkartīti un cenas Bolt Food',
     locationEyebrow: 'Kur atrast',
     locationTitle: 'Jūs gaidam Vecrīgā',
@@ -51,18 +59,24 @@ const translations = {
   },
   ru: {
     pageTitle: 'Itāļu kafija un uzkodas — итальянская кофейня в Старой Риге',
+    topbarOpen: 'Сейчас мы открыты',
     navAbout: 'О нас',
     navMenu: 'Меню',
     navLocation: 'Как найти',
     navContacts: 'Контакты',
     btnBolt: 'Заказать на Bolt Food',
     heroLocation: 'Vecrīga · Torņa iela 4',
-    heroTitle: 'Itāļu kafija',
-    heroSubtitle: 'un uzkodas',
+    heroHook: 'Проголодались?!',
+    heroWelcomePre: 'Отлично, здесь вас ждёт',
+    heroWelcomeHighlight: 'настоящая Италия',
     heroDesc: 'Настоящая итальянская кофейня в сердце Старой Риги — ароматный эспрессо, пицца из печи, паста и уютные закуски. Приходите за столик или закажите с доставкой.',
     btnOrder: 'Заказать доставку',
-    btnMap: 'Найти нас на карте',
+    btnSeeMenu: 'Смотреть меню',
     heroHours: 'Ежедневно · 11:40–20:00',
+    promoTitle: 'Закажите доставку Bolt Food',
+    promoDesc: 'Любимая пицца, паста и десерты — прямо к вашей двери, тёплыми.',
+    promoBtn1: 'Смотреть меню',
+    promoBtn2: 'Заказать сейчас',
     aboutEyebrow: 'О нас',
     aboutTitle: 'Кусочек Италии на брусчатке Старой Риги',
     aboutDesc: 'Itāļu kafija un uzkodas — небольшая семейная кофейня, где итальянский эспрессо варят так, как учили в Неаполе, а пиццу выпекают до хрустящей корочки. Здесь можно неспешно позавтракать капучино с круассаном, пообедать пастой с лососем или взять пиццу и уютные закуски с собой.',
@@ -74,17 +88,19 @@ const translations = {
     pointDesc3: 'Моцарелла, базилик, вяленые томаты — каждый день.',
     menuEyebrow: 'Ассортимент',
     menuTitle: 'Наше меню',
-    menuNote: 'Ниже — избранные позиции нашего ассортимента. Актуальное меню, полный список блюд и цены смотрите в приложении и на странице Bolt Food.',
+    menuNote: 'Ниже — избранные позиции нашего ассортимента с ориентировочными ценами. Актуальное меню и точные цены смотрите в приложении и на странице Bolt Food.',
     menuCoffee: 'Кофе и эспрессо-бар',
     menuPizza: 'Пицца из печи',
     menuPasta: 'Паста и горячее',
     menuSnacks: 'Закуски',
     menuDesserts: 'Десерты',
+    coffeeMocha: 'Мокко / горячий шоколад',
     signature: 'фирменное блюдо',
-    snack1: 'Брускетта с томатами и базиликом',
-    snack2: 'Капрезе (моцарелла, томат, базилик)',
+    snack1: 'Брускетта помодоро',
+    snack2: 'Салат Капрезе',
     snack3: 'Панини чиабатта',
     snack4: 'Тарелка оливок и сыра',
+    dessertCannoli: 'Канноли с рикоттой',
     favorite: 'гость любит больше всего',
     btnFullMenu: 'Смотреть полное меню и цены на Bolt Food',
     locationEyebrow: 'Как нас найти',
@@ -101,18 +117,24 @@ const translations = {
   },
   en: {
     pageTitle: 'Itāļu kafija un uzkodas — Italian café in Old Riga',
+    topbarOpen: 'We are open now',
     navAbout: 'About',
     navMenu: 'Menu',
     navLocation: 'Find us',
     navContacts: 'Contacts',
     btnBolt: 'Order on Bolt Food',
     heroLocation: 'Old Riga · Torņa Street 4',
-    heroTitle: 'Itāļu kafija',
-    heroSubtitle: 'un uzkodas',
+    heroHook: 'Hungry?!',
+    heroWelcomePre: 'Good, here awaits',
+    heroWelcomeHighlight: 'real Italy',
     heroDesc: 'True Italian café in the heart of Old Riga — aromatic espresso, wood-fired pizza, pasta and cozy snacks. Visit us for a table or order delivery.',
     btnOrder: 'Order delivery',
-    btnMap: 'Find us on map',
+    btnSeeMenu: 'See the menu',
     heroHours: 'Daily · 11:40–20:00',
+    promoTitle: 'Order delivery on Bolt Food',
+    promoDesc: 'Favorite pizza, pasta and desserts — straight to your door, still warm.',
+    promoBtn1: 'See the menu',
+    promoBtn2: 'Order now',
     aboutEyebrow: 'About',
     aboutTitle: 'A slice of Italy on Old Riga\'s cobblestones',
     aboutDesc: 'Itāļu kafija un uzkodas — a small family-run café where Italian espresso is made the way they taught it in Naples, and pizza is baked until crispy. Here you can enjoy a leisurely breakfast cappuccino with a croissant, lunch on pasta with salmon, or take pizza and cozy snacks to go.',
@@ -124,17 +146,19 @@ const translations = {
     pointDesc3: 'Mozzarella, basil, sun-dried tomatoes — every day.',
     menuEyebrow: 'Selection',
     menuTitle: 'Our menu',
-    menuNote: 'Below — selected highlights from our offer. See the full menu, complete item list and prices in the app and on the Bolt Food page.',
+    menuNote: 'Below — selected highlights from our offer with indicative prices. See the full menu and exact prices in the app and on the Bolt Food page.',
     menuCoffee: 'Coffee & espresso bar',
     menuPizza: 'Oven-baked pizza',
     menuPasta: 'Pasta & hot dishes',
     menuSnacks: 'Snacks',
     menuDesserts: 'Desserts',
+    coffeeMocha: 'Mocha / hot chocolate',
     signature: 'house favorite',
-    snack1: 'Bruschetta with tomatoes and basil',
-    snack2: 'Caprese (mozzarella, tomato, basil)',
+    snack1: 'Bruschetta pomodoro',
+    snack2: 'Caprese salad',
     snack3: 'Panini ciabatta',
     snack4: 'Olive & cheese board',
+    dessertCannoli: 'Cannoli with ricotta',
     favorite: 'guest favorite',
     btnFullMenu: 'View full menu & prices on Bolt Food',
     locationEyebrow: 'Find us',
@@ -160,7 +184,6 @@ function setLang(lang) {
   localStorage.setItem('lang', lang);
   document.documentElement.lang = lang;
 
-  // Update all elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
@@ -168,15 +191,12 @@ function setLang(lang) {
     }
   });
 
-  // Update page title
   document.title = translations[lang].pageTitle;
 
-  // Update language selector buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
-  // Update nav toggle aria-label
   const navToggle = document.getElementById('navToggle');
   if (navToggle) {
     const labels = { lv: 'Atvērt izvēlni', ru: 'Открыть меню', en: 'Open menu' };
@@ -188,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const lang = getCurrentLang();
   setLang(lang);
 
-  // Language selector buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       setLang(btn.dataset.lang);
